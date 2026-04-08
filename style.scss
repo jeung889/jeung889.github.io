@@ -232,7 +232,9 @@ nav {
 }
 
 .profile-container {
-  margin: 30px 0;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
 }
 
 .profile-row {
@@ -261,10 +263,29 @@ nav {
   padding-left: 20px;
 }
 
-.profile-container {
-  margin: 30px auto;
-  display: flex;
-  justify-content: center;
+@include mobile {
+  .profile-row {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .profile-photo {
+    order: 1;
+  }
+
+  .profile-photo img {
+    width: 200px;
+  }
+
+  .profile-text {
+    order: 2;
+    text-align: left;
+  }
+
+  .profile-indent {
+    padding-left: 0;
+  }
 }
 
 .paper-list li {
