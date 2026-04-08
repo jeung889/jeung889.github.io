@@ -5,6 +5,7 @@
 //
 @import "reset";
 @import "variables";
+// Syntax highlighting @import is at the bottom of this file
 
 /**************/
 /* BASE RULES */
@@ -16,7 +17,7 @@ html {
 
 body {
   background: $white;
-  font: 18px/1.4 Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
+  font: 16px/1.6 Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
   color: $darkGray;
 }
 
@@ -40,22 +41,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 24px;
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
-}
-
-h3 {
   font-size: 20px;
 }
 
-h4 {
+h3 {
   font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
   color: $gray;
 }
 
@@ -148,9 +149,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @include mobile {
-    text-align: center;
-  }
 }
 
 .site-info {
@@ -163,33 +161,33 @@ img {
   cursor: pointer;
   font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
   font-weight: 700;
-  font-size: 28px;
-  letter-spacing: 1px;
+  font-size: 20px;
+  letter-spacing: 0px;
+  a {
+    color: $darkGray;
+    &:hover {
+      color: $darkGray;
+    }
+  }
 }
 
 .site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
-  @include mobile {
-    margin: 3px 0;
-  }
+  display: none;
 }
 
 nav {
   font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
-  font-size: 18px;
+  font-size: 16px;
   @include mobile {
     margin-top: 9px;
     display: block;
     font-size: 16px;
   }
   a {
-    margin-left: 20px;
+    margin-left: 25px;
     color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-weight: 400;
+    letter-spacing: 0px;
     @include mobile {
       margin: 0 10px;
       color: $blue;
