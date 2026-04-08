@@ -271,6 +271,16 @@ nav {
   line-height: 1.4;
 }
 
+.keyword-tag {
+  display: inline-block;
+  border: 1px solid $gray;
+  border-radius: 3px;
+  padding: 1px 7px;
+  margin: 2px 3px 2px 0;
+  font-size: 13px;
+  color: $gray;
+}
+
 footer {
   padding: 20px 0;
   text-align: center;
