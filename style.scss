@@ -230,6 +230,35 @@ nav {
   background-color: $lightGray;
 }
 
+.profile-container {
+  margin: 30px 0;
+}
+
+.profile-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.profile-photo img {
+  width: 200px;
+  border-radius: 4px;
+}
+
+.profile-text p {
+  margin: 3px 0;
+  line-height: 1.6;
+}
+
+.profile-section-title {
+  margin-top: 14px !important;
+  text-decoration: underline;
+}
+
+.profile-indent {
+  padding-left: 20px;
+}
+
 footer {
   padding: 20px 0;
   text-align: center;
