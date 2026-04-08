@@ -1,15 +1,11 @@
 ---
-layout: page
-title: About
-permalink: /about/
+layout: default
+title: Teaching
 ---
 
-Some information about you!
+<h3>CUHK Business School</h3>
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+<ul class="paper-list">
+  <li><p>FINA 3010: Financial Markets (2023–)</p></li>
+  <li><p>FTEC 5910/5920: FinTech Project I & II (2023–2025)</p></li>
+</ul>
