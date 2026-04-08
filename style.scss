@@ -145,7 +145,7 @@ img {
 
 .masthead {
   padding: 40px 0 12px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $darkGray;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -224,6 +224,7 @@ nav {
 }
 
 .wrapper-footer {
+  display: none;
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
