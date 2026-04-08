@@ -238,10 +238,11 @@ nav {
   display: flex;
   align-items: center;
   gap: 40px;
+  justify-content: center;
 }
 
 .profile-photo img {
-  width: 200px;
+  width: 240px;
   border-radius: 4px;
 }
 
