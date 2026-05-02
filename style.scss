@@ -355,14 +355,33 @@ details summary {
 details summary::-webkit-details-marker {
   display: none;
 }
-details[open] summary::after {
-  content: " Show less";
-  color: #0366d6;
-}
+
+/* 닫혀있을 때: summary 끝에 "... Show more" */
 details:not([open]) summary::after {
   content: "... Show more";
   color: #0366d6;
   font-weight: bold;
+}
+
+/* 열렸을 때: summary 뒤에 아무것도 안 붙임 */
+details[open] summary::after {
+  content: "";
+}
+
+/* 열렸을 때: 본문(span) 끝에 "Show less"를 붙임 */
+details[open] > span::after {
+  content: " Show less";
+  color: #0366d6;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* details 자체를 inline처럼 흐르게 */
+details {
+  display: inline;
+}
+details > span {
+  display: inline;
 }
 
 @import "highlights";
