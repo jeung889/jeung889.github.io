@@ -347,5 +347,23 @@ footer {
   text-align: center;
 }
 
+details summary {
+  cursor: pointer;
+  display: inline;
+  list-style: none;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+details[open] summary::after {
+  content: " Show less";
+  color: #0366d6;
+}
+details:not([open]) summary::after {
+  content: "... Show more";
+  color: #0366d6;
+  font-weight: bold;
+}
+
 @import "highlights";
 @import "svg-icons";
