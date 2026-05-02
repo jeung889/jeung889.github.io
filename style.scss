@@ -347,44 +347,37 @@ footer {
   text-align: center;
 }
 
-details summary {
-  cursor: pointer;
-  display: inline;
-  list-style: none;
-}
-details summary::-webkit-details-marker {
-  display: none;
-}
-
-/* 닫혀있을 때: summary 끝에 "... Show more" */
-details:not([open]) summary::after {
-  content: "... Show more";
-  color: #0366d6;
-  font-weight: bold;
-}
-
-/* 열렸을 때: summary 뒤에 아무것도 안 붙임 */
-details[open] summary::after {
-  content: "";
-}
-
-/* 열렸을 때: 본문(span) 끝에 "Show less"를 붙임 */
-details[open] > span::after {
-  content: " Show less";
-  color: #0366d6;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* details 자체를 inline처럼 흐르게 */
-details {
-  display: inline;
+.abstract {
   padding-left: 1em;
   border-left: 2px solid #ddd;
+  margin-top: 0.3em;
   margin-left: 0.2em;
 }
-details > span {
+
+/* 기본: 짧은 버전만 표시 */
+.abstract .abstract-full {
+  display: none;
+}
+.abstract .abstract-short {
   display: inline;
+}
+
+/* open 상태: 긴 버전만 표시 */
+.abstract.open .abstract-short {
+  display: none;
+}
+.abstract.open .abstract-full {
+  display: inline;
+}
+
+.toggle-abstract {
+  color: #0366d6;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+.toggle-abstract:hover {
+  text-decoration: underline;
 }
 
 @import "highlights";
